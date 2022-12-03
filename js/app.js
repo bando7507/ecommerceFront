@@ -10,3 +10,15 @@ navOpen.addEventListener('click', () =>{
 navClose.addEventListener('click', () =>{
     navMenu.classList.remove('show')
 })
+
+var homeSwiper = new Swiper(".home-swiper", {
+    spaceBetween : 16,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    loop: 'true', 
+    slidesPerView: 3,
+    navigation: 'true',
+    pagination: {
+        el: ".swiper-pagination",
+      },
+});
