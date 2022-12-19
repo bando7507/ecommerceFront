@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="product_style.css">
     <title>products</title>
 </head>
+
 <body>
     <header class="header" id="header">
         <nav class="nav container">
@@ -57,35 +59,102 @@
         </section>
 
         <section class="popular container">
-            <h3  class="popular__subtitle">
+            <h3 class="popular__subtitle">
                 the most visited</h3>
             <h1 class="popular__title">
                 TOP popular
             </h1>
-            <span class="popular__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facere officia maxime totam necessitatibus iure alias commodi. Mollitia nulla id debitis cum vero magnam enim recusandae? Vel aperiam ullam consequatur?</span>
+            <span class="popular__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facere officia
+                maxime totam necessitatibus iure alias commodi. Mollitia nulla id debitis cum vero magnam enim
+                recusandae? Vel aperiam ullam consequatur?</span>
 
             <div class="popular__container">
-                <div>
-                    <img src="../../img/popular.png" alt="">
+                <div class="popular__content">
+                    <img class="popular__img" src="../../img/popular.png" alt="">
+                    <span class="popular__product">Gamer</span>
+                    <span class="popular__product-desc">Lorem ipsum dolor sit</span>
+                    <span class="popular__link">See All</span>
                 </div>
-                <div>
-                    <img src="../../img/popular1.jfif" alt="">
+                <div class="popular__content">
+                    <img class="popular__img" src="../../img/popular1-removebg-preview.png" alt="">
+                    <span class="popular__product">Iphone</span>
+                    <span class="popular__product-desc">Lorem ipsum dolor sit</span>
+                    <span class="popular__link">See All</span>
+
                 </div>
-                <div>
-                    <img src="../../img/popular2.webp" alt="">
+                <div class="popular__content">
+                    <img class="popular__img" src="../../img/popular2.webp" alt="">
+                    <span class="popular__product">Headphones</span>
+                    <span class="popular__product-desc">Lorem ipsum dolor sit</span>
+                    <span class="popular__link">See All</span>
                 </div>
-                <div>
-                    <img src="../../img/popular3.webp" alt="">
+                <div class="popular__content">
+                    <img class="popular__img" src="../../img/popular3.webp" alt="">
+                    <span class="popular__product">TV</span>
+                    <span class="popular__product-desc">Lorem ipsum dolor sit</span>
+                    <span class="popular__link">See All</span>
                 </div>
             </div>
+        </section>
+
+        <section class="presentatin container">
+            <div class="presentatin__1">
+                <h1 class="presentatin__1-title">Lorem, ipsum dolor sit</h1>
+                <span class="presentatin__1-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cumque </span>
+                <div>
+                    <span class="presentatin__1-link">More</span>
+                </div>
+            </div>
+            <div class="presentatin__2">
+                <h1 class="presentatin__2-title">Lorem, ipsum dolor si</h1>
+                <span class="presentatin__2-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cumque </span>
+                <div>
+                    <span class="presentatin__2-link">More</span>
+                </div>
+            </div>
+            <div class="presentatin__3">
+                <h1 class="presentatin__3-title">Lorem, ipsum dolor si</h1>
+                <span class="presentatin__3-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cumque </span>
+                <div>
+                    <span class="presentatin__3-link">More</span>
+                </div>
+            </div>
+
+            <div class="presentatin__4">
+                <h1 class="presentatin__4-title">Lorem, ipsum dolor si</h1>
+                <span class="presentatin__4-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cumque </span>
+                <div>
+                    <span class="presentatin__4-link">More</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="products container">
+            <div class="products__nav">
+                <h1 class="products__title">Lorem ipsum dolor</h1>
+                <ul class="products__list">
+                    <li class="products__item" data-amin="1">Phone</li>
+                    <li class="products__item" data-amin="2">Electronics</li>
+                    <li class="products__item" data-amin="3">Application</li>
+                    <li class="products__item" data-amin="4">Clothes</li>
+                    <li class="products__item" data-amin="5">Kids</li>
+                </ul>
+            </div>
+
+            <div class="product show-product" data-amin="1">Phone</div>
+            <div class="product" data-amin="2">Electronics</div>
+            <div class="product" data-amin="3">Application</div>
+            <div class="product" data-amin="4">Clothes</div>
+            <div class="product" data-amin="5">Kids</div>
         </section>
     </main>
 
 
-    
+
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
-    <!-- <script src="../../js/app.js"></script> -->
     <script src="../../js/app_product.js"></script>
 </body>
+
 </html>

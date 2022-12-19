@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap');
 
 :root {
-    --bg-color: #f1e5d9;
+    --bg-color: #fff;
     --color-white: #fff;
     --text-color1: #000;
     --text-color2: #d49556;
@@ -127,10 +127,9 @@ body::-webkit-scrollbar-thumb {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     width: 23rem;
     height: 23rem;
-    background-color: #e4c09d;
+    background-color: #f1f1f1;
     border-radius: 50%;
     z-index: -1;
 }
@@ -206,7 +205,7 @@ body::-webkit-scrollbar-thumb {
     
     display: flex;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #f1f1f1;
     padding: 1rem;
     box-sizing: border-box;
     overflow: hidden;
@@ -353,7 +352,7 @@ body::-webkit-scrollbar-thumb {
 .feature__img {
     display: flex;
     border-radius: 10px;
-    background-color: var(--text-color2);
+    background-color: #f1f1f1;
     padding: 1rem;
     box-sizing: border-box;
     overflow: hidden;

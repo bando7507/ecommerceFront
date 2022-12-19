@@ -91,36 +91,6 @@ onglet.forEach((el) => {
 })
 
 
-// const circle = document.querySelector('.circle')
-// const homeLeft = document.querySelector('.home__left')
-// const homeImg = document.querySelector('.home__img')
-// const tl = new TimelineMax()
-
-
-
-// tl.fromTo(circle, 1,{
-//     height: '0%'   
-// },{
-//     height: '100%'   
-// })
-
-// tl.fromTo(homeImg, 1.2,{
-//     scale: '.8',
-// },{
-//     scale: '1',
-//     ease: Power2.easeInOut
-// }, '-=.9')
-
-// tl.fromTo(homeLeft, 1,{
-//     x: '150px', 
-//     scale: '.5',
-//     opacity: '0'
-// },{
-//     x: '0',
-//     scale: '1',
-//     opacity: '1',
-//     // ease: Power2.easeInOut
-// }, '-=.9')
 
 
 
