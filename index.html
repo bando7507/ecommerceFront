@@ -12,21 +12,25 @@
 </head>
 
 <body>
+
     <header class="header" id="header">
         <nav class="nav container">
-            <a href=""><img src="img/logo.png" class="nav__logo" alt=""></a>
+            <a href=""><img src="../../img/logo.png" class="nav__logo" alt=""></a>
             <div class="nav__menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#">HOME</a></li>
-                    <li class="nav__item"><a href="views/view_products/products.html">PRODUCTS</a></li>
+                    <li class="nav__item"><a href="/">HOME</a></li>
+                    <li class="nav__item"><a href="/views/view_products/products.html">PRODUCTS</a></li>
                     <li class="nav__item"><a href="#">ABOUT</a></li>
                     <li class="nav__item"><a href="#">CONTACT</a></li>
                 </ul>
                 <i class="uil uil-times nav__close" id="nav--close"></i>
             </div>
             <div class="nav__numbers">
-                <span>Call Now</span>
-                <span>1800 888 555</span>
+                <span class="cart"><i class="uil uil-shopping-cart"></i></span>
+                <span class="user">
+                    <i class="uil uil-user-square"></i>
+                    Login
+                </span>
             </div>
             <div class="nav__btns">
                 <div class="nav__toggle" id="nav__toggle">
@@ -37,719 +41,810 @@
     </header>
 
 
+    <section class="nav__section">
+        <div class="nav__hero">
+            <img src="../../img/mike-petrucci-c9FQyqIECds-unsplash.jpg" alt="">
+            <h1 class="headline">Enjoy yourself <span>😉</span></h1>
+        </div>
+    </section>
+
+    <div class="slider"></div>
+
     <main>
-        <!-- HOME SECTION -->
-
-        <section class="container home">
-            <div class="home__right">
-                <img src="img/girls.png" alt="" class="home__img">
-                <div class="circle"></div>
+        <section class="logo container">
+            <div class="logo__container">
+                <img class="logo__img" src="../../img/logo1.png" alt="">
+                <img class="logo__img" src="../../img/logo2.png" alt="">
+                <img class="logo__img" src="../../img/logo3.png" alt="">
+                <img class="logo__img" src="../../img/logo4.png" alt="">
             </div>
-            <div class="home__left">
-                <div class="home__slot">NEW ARRIVALS</div>
-                <div class="home__title">
-                    JUST <br> FOR
-                    <span>you</span>
-                </div>
-                <div class="home__box">
-                    <div class="home__box-title">
-                        <h1>FOR ONLINE</h1>
-                        <p>ORDER</p>
+        </section>
+
+        <section class="popular container">
+            <h3 class="popular__subtitle">
+                the most visited</h3>
+            <h1 class="popular__title">
+                TOP popular
+            </h1>
+            <span class="popular__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facere officia
+                maxime totam necessitatibus iure alias commodi. Mollitia nulla id debitis cum vero magnam enim
+                recusandae? Vel aperiam ullam consequatur?</span>
+
+            <a href="#">
+                <div class="popular__container">
+                    <div class="popular__content">
+                        <img class="popular__img" src="../../img/popular.png" alt="">
+                        <span class="popular__product">Gamer</span>
+                        <span class="popular__product-desc">Lorem ipsum dolor sit</span>
+                        <span class="popular__link">See All</span>
                     </div>
-                    <div class="home__box-pourcent">
-                        <span>30%</span>
-                        <span>OFF</span>
+            </a>
+            <a href="#">
+                <div class="popular__content">
+                    <img class="popular__img" src="../../img/popular1-removebg-preview.png" alt="">
+                    <span class="popular__product">Iphone</span>
+                    <span class="popular__product-desc">Lorem ipsum dolor sit</span>
+                    <span class="popular__link">See All</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="popular__content">
+                    <img class="popular__img" src="../../img/popular2.webp" alt="">
+                    <span class="popular__product">Headphones</span>
+                    <span class="popular__product-desc">Lorem ipsum dolor sit</span>
+                    <span class="popular__link">See All</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="popular__content">
+                    <img class="popular__img" src="../../img/popular3.webp" alt="">
+                    <span class="popular__product">TV</span>
+                    <span class="popular__product-desc">Lorem ipsum dolor sit</span>
+                    <span class="popular__link">See All</span>
+                </div>
+            </a>
+            </div>
+        </section>
+
+        <section class="presentatin container">
+            <div class="presentatin__1">
+                <h1 class="presentatin__1-title">Lorem, ipsum dolor sit</h1>
+                <span class="presentatin__1-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cumque
+                </span>
+                <div>
+                    <span class="presentatin__1-link">More <i class="uil uil-arrow-right"></i></span>
+                </div>
+            </div>
+            <div class="presentatin__2">
+                <h1 class="presentatin__2-title">Lorem, ipsum dolor si</h1>
+                <span class="presentatin__2-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cumque
+                </span>
+                <div>
+                    <span class="presentatin__2-link">More <i class="uil uil-arrow-right"></i></span>
+                </div>
+            </div>
+            <div class="presentatin__3">
+                <h1 class="presentatin__3-title">Lorem, ipsum dolor si</h1>
+                <span class="presentatin__3-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cumque
+                </span>
+                <div>
+                    <span class="presentatin__3-link">More <i class="uil uil-arrow-right"></i></span>
+                </div>
+            </div>
+
+            <div class="presentatin__4">
+                <h1 class="presentatin__4-title">Lorem, ipsum dolor si</h1>
+                <span class="presentatin__4-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cumque
+                </span>
+                <div>
+                    <span class="presentatin__4-link">More <i class="uil uil-arrow-right"></i></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="products container">
+            <div class="products__nav">
+                <h1 class="products__title">Lorem ipsum dolor</h1>
+                <ul class="products__list">
+                    <li class="products__item active" data-amin="1">Phone</li>
+                    <li class="products__item" data-amin="2">Electronics</li>
+                    <li class="products__item" data-amin="3">Application</li>
+                    <li class="products__item" data-amin="4">Clothes</li>
+                    <li class="products__item" data-amin="5">Kids</li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="product show-product" data-amin="1">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="bg">
+                                    <div class="product__slide-content">
+                                        <div class="product__slide-img">
+                                            <img class="" src="../../img/popular1-removebg-preview.png" alt="">
+                                        </div>
+                                        <div class="product__slide-desc">
+                                            <span>Lorem</span>
+
+                                            <div class="product__p">
+                                                <span class="price">180$</span>
+                                                <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/popular1-removebg-preview.png" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/popular1-removebg-preview.png" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/popular1-removebg-preview.png" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/popular1-removebg-preview.png" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/popular1-removebg-preview.png" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <div class="product" data-amin="2">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="bg">
+                                    <div class="product__slide-content">
+                                        <div class="product__slide-img">
+                                            <img class="" src="../../img/popular.png" alt="">
+                                        </div>
+                                        <div class="product__slide-desc">
+                                            <span>Lorem</span>
+
+                                            <div class="product__p">
+                                                <span class="price">180$</span>
+                                                <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/popular.png" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/popular.png" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/popular.png" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/popular.png" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/popular.png" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <div class="product" data-amin="3">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="bg">
+                                    <div class="product__slide-content">
+                                        <div class="product__slide-img">
+                                            <img class="" src="../../img/applewatch-removebg-preview.png" alt="">
+                                        </div>
+                                        <div class="product__slide-desc">
+                                            <span>Lorem</span>
+
+                                            <div class="product__p">
+                                                <span class="price">180$</span>
+                                                <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/applewatch-removebg-preview.png" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/applewatch-removebg-preview.png" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/applewatch-removebg-preview.png" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/applewatch-removebg-preview.png" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/applewatch-removebg-preview.png" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <div class="product" data-amin="4">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="bg">
+                                    <div class="product__slide-content">
+                                        <div class="product__slide-img">
+                                            <img class="" src="../../img/girls.png" alt="">
+                                        </div>
+                                        <div class="product__slide-desc">
+                                            <span>Lorem</span>
+
+                                            <div class="product__p">
+                                                <span class="price">180$</span>
+                                                <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/girls.png" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/girls.png" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/girls.png" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/girls.png" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/girls.png" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="product" data-amin="5">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="bg">
+                                    <div class="product__slide-content">
+                                        <div class="product__slide-img">
+                                            <img class="" src="../../img/popular3.webp" alt="">
+                                        </div>
+                                        <div class="product__slide-desc">
+                                            <span>Lorem</span>
+
+                                            <div class="product__p">
+                                                <span class="price">180$</span>
+                                                <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/popular3.webp" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/popular3.webp" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/popular3.webp" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/popular3.webp" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide">
+                                    <div class="bg">
+                                        <div class="product__slide-content">
+                                            <div class="product__slide-img">
+                                                <img class="" src="../../img/popular3.webp" alt="">
+                                            </div>
+                                            <div class="product__slide-desc">
+                                                <span>Lorem</span>
+
+                                                <div class="product__p">
+                                                    <span class="price">180$</span>
+                                                    <span class="catrs"><i class="uil uil-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SLIDER SECTION -->
 
-        <section class="container slider">
-            <div class="swiper home-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide slide__content">
-                        <div class="over">
-                            <div class="name">
-                                <span>NATURE</span>
-                                <span>Super Skin Care</span>
-                            </div>
-                            <span class="price">
-                                15$
-                            </span>
-                            <div>Shop now</div>
-                        </div>
-                        <img src="img/img13.png" class="sider__img" alt="">
-                    </div>
-
-                    <div class="swiper-slide slide__content">
-                        <div class="over">
-                            <div class="name">
-                                <span>SKIN</span>
-                                <span>Super Skin Care</span>
-                            </div>
-                            <span class="price">
-                                15$
-                            </span>
-                            <div>Shop now</div>
-                        </div>
-                        <img src="img/img13.png" class="sider__img" alt="">
-                    </div>
-
-                    <div class="swiper-slide slide__content">
-                        <div class="over">
-                            <div class="name">
-                                <span>SKIN</span>
-                                <span>Super Skin Care</span>
-                            </div>
-                            <span class="price">
-                                15$
-                            </span>
-                            <div>Shop now</div>
-                        </div>
-                        <img src="img/img13.png" class="sider__img" alt="">
-                    </div>
-
-                    <div class="swiper-slide slide__content">
-                        <div class="over">
-                            <div class="name">
-                                <span>NATURE</span>
-                                <span>Super Skin Care</span>
-                            </div>
-                            <span class="price">
-                                15$
-                            </span>
-                            <div>Shop now</div>
-                        </div>
-                        <img src="img/img13.png" class="sider__img" alt="">
-                    </div>
-
-                    <div class="swiper-slide slide__content">
-                        <div class="over">
-                            <div class="name">
-                                <span>NATURE</span>
-                                <span>Super Skin Care</span>
-                            </div>
-                            <span class="price">
-                                15$
-                            </span>
-                            <div>Shop now</div>
-                        </div>
-                        <img src="img/img13.png" class="sider__img" alt="">
-                    </div>
-
-                    <div class="swiper-slide slide__content">
-                        <div class="over">
-                            <div class="name">
-                                <span>SKIN</span>
-                                <span>Super Skin Care</span>
-                            </div>
-                            <span class="price">
-                                15$
-                            </span>
-                            <div>Shop now</div>
-                        </div>
-                        <img src="img/img13.png" class="sider__img" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- VIRTUAL SECTION -->
-
-        <section class="virtual container">
-            <div class="virtual__centent">
-                <div class="virtual__centent-title">
-                    VIRTUAL TRY-ON
-                </div>
-                <div class="virtual__centent-subtitle">
-                    <span>NEVER BUY THE WRONG</span>
-                    <span>SHADE AGAIN!</span>
-                </div>
-                <div class="try">
-                    <span>Try Now</span>
-                    <img src="img/shade.png" class="shade" alt="">
-                </div>
-            </div>
-            <img src="img/before.png" class="virtual__img" alt="">
-        </section>
-
-        <!-- FEATURE SECTION -->
-
-        <section class="feature">
-            <div class="feature__head">
-                <h2 class="feature__title">Our Featured Products</h2>
-                <img src="img/plane.png" class="plane" alt="">
+        <section class="casque container">
+            <div class="casque__head">
+                <h1>Magni doleres</h1>
+                <p>12:17:0842</p>
             </div>
 
-            <div class="feature__content">
-                <div class="feature__menu">
-                    <ul class="feature__list">
-                        <li class="feature__item" data-lo="1">All</li>
-                        <li class="feature__item" data-lo="2">Skin Care</li>
-                        <li class="feature__item" data-lo="3">Conditioners</li>
-                        <li class="feature__item" data-lo="4">Foundation</li>
+
+            <div class="casque__container">
+                <div class="casque__menu">
+                    <div class="casque__menu-title">
+                        Voluptate
+                    </div>
+                    <ul class="casque__list">
+                        <li class="casque__item" data-amine="1">Phone</li>
+                        <li class="casque__item" data-amine="2">Electronics</li>
+                        <li class="casque__item" data-amine="3">Application</li>
+                        <li class="casque__item" data-amine="4">Clothes</li>
+                        <li class="casque__item" data-amine="5">Kids</li>
                     </ul>
                 </div>
 
-                <div class="lolo">
-                    <div class="feature__grid acti" data-lo="1">
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>SKIN</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    15$
-                                </span>
-                                <div class="s">Shop now</div>
-                            </div>
-                            <img src="img/img1.png" class="feat__img" alt="">
+                <div class="casque__box-img">
+                    
+                    <img src="../../img/casque.png" data-amine="1" class="box-img box-img-show" alt="">
+                    <img src="img/manette-ps5.png" data-amine="2" class="box-img" alt="">
+                    <img src="img/vr.png" data-amine="3" class="box-img" alt="">
+                    <img src="img/shoes.png" data-amine="4" class="box-img" alt="">
+                    <img src="img/NSwitch.png" data-amine="5" class="box-img" alt="">
+                    <div class="casque__box-desc">
+                        <div class="casque__box-title">
+                            Qui autem vel eum iure
+                            <br>
+                            reprehenderit
+                            <span>$199</span>
                         </div>
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>SKIN</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    19$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img2.png" class="feat__img" alt="">
-                        </div>
-
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>NATURE</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    20$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img3.png" class="feat__img" alt="">
-                        </div>
-
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>FOUNDATION</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    15$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img4.png" class="feat__img" alt="">
-                        </div>
-
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>CONDITIONER</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    15$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img5.png" class="feat__img" alt="">
-                        </div>
-
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>NATURE</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    15$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img6.png" class="feat__img" alt="">
-                        </div>
-
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>CONDITIONER</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    15$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img7.png" class="feat__img" alt="">
-                        </div>
-
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>CONDITIONER</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    15$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img8.png" class="feat__img" alt="">
-                        </div>
-
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>CONDITIONER</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    15$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img9.png" class="feat__img" alt="">
-                        </div>
-
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>CONDITIONER</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    15$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img10.png" class="feat__img" alt="">
-                        </div>
-
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>FOUNDATION</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    15$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img11.png" class="feat__img" alt="">
-                        </div>
-
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>FOUNDATION</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    15$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img12.png" class="feat__img" alt="">
-                        </div>
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>SKIN</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    15$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img13.png" class="feat__img" alt="">
-                        </div>
-
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>SKIN</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    15$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img14.png" class="feat__img" alt="">
-                        </div>
-                    </div>
-                    <div class="feature__grid" data-lo="2">
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>SKIN</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    15$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img1.png" class="feat__img" alt="">
-                        </div>
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>SKIN</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    19$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img2.png" class="feat__img" alt="">
-                        </div>
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>SKIN</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    15$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img13.png" class="feat__img" alt="">
-                        </div>
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>SKIN</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    15$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img14.png" class="feat__img" alt="">
-                        </div>
-                    </div>
-                    <div class="feature__grid" data-lo="3">
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>CONDITIONER</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    15$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img5.png" class="feat__img" alt="">
-                        </div>
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>CONDITIONER</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    15$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img7.png" class="feat__img" alt="">
-                        </div>
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>CONDITIONER</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    15$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img8.png" class="feat__img" alt="">
-                        </div>
-
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>CONDITIONER</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    15$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img9.png" class="feat__img" alt="">
-                        </div>
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>CONDITIONER</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    15$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img10.png" class="feat__img" alt="">
-                        </div>
-                    </div>
-                    <div class="feature__grid" data-lo="4">
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>FOUNDATION</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    15$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img4.png" class="feat__img" alt="">
-                        </div>
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>FOUNDATION</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    15$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img11.png" class="feat__img" alt="">
-                        </div>
-                        <div class="feature__img">
-                            <div class="over">
-                                <div class="name">
-                                    <span>FOUNDATION</span>
-                                    <span>Super Skin Care</span>
-                                </div>
-                                <span class="price">
-                                    15$
-                                </span>
-                                <div>Shop now</div>
-                            </div>
-                            <img src="img/img12.png" class="feat__img" alt="">
-                        </div>
+                        <p class="box-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe sequi modi vitae
+                            necessitatibus nobis iste molestias dolorum alias commodi voluptates voluptatem tempora,
+                            soluta sapiente nihil quos blanditiis, magnam quod odio!
+                        </p>
+                        <button class="casqu__btn">Add to cart</button>
                     </div>
                 </div>
             </div>
         </section>
 
-
-        <!-- RATES SECTION -->
-
-        <section class="rates container">
-            <div class="rates__left">
-                <h1 class="rates__left-title">
-                    TOP RATED
-                </h1>
-                <span>SEEDLY SAY HAS SUITABLE DISPOSAL AND BOY.</span>
-                <span>EXERCISE JOY MAN CHILDREN REJOICED</span>
-            </div>
-
-            <div class="rates__center">
-                <img src="img/testimonialHero.png" class="rates__img" alt="">
-            </div>
-
-            <div class="rates__right">
-                <h1 class="rates__right-title">
-                    100K
-                </h1>
-                <span>
-                    HAPPY CUSTOMERS WITH US
-                </span>
-            </div>
-        </section>
-
-        <!-- REVIWS SECTION -->
-
-        <section class="review">
-            <div class="review__container myreviewSwiper">
-                <div class="review__cards-wrapper swiper-wrapper">
-                    <div class="review__cards swiper-slide">
-                        <div class="img-content">
-                            <span class="overlay"></span>
-
-                            <div class="review__card-img">
-                                <img src="img/profile1.png" alt="">
-                            </div>
-                        </div>
-
-                        <div class="review__content">
-                            <h2 class="review__name">
-                                David ell
-                            </h2>
-                            <p class="review__desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates numquam officia
-                                voluptatibus consectetur, similique asperiores incidunt consequuntur quas quod autem
-                                soluta molestias quidem minima hic dignissimos illum iste necessitatibus nobis.
-                            </p>
-                            <button class="review__btn">Read More</button>
-                        </div>
-                    </div>
-
-                    <div class="review__cards swiper-slide">
-                        <div class="img-content">
-                            <span class="overlay"></span>
-
-                            <div class="review__card-img">
-                                <img src="img/profile1.png" alt="">
-                            </div>
-                        </div>
-
-                        <div class="review__content">
-                            <h2 class="review__name">
-                                David ell
-                            </h2>
-                            <p class="review__desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates numquam officia
-                                voluptatibus consectetur, similique asperiores incidunt consequuntur quas quod autem
-                                soluta molestias quidem minima hic dignissimos illum iste necessitatibus nobis.
-                            </p>
-                            <button class="review__btn">Read More</button>
-                        </div>
-                    </div>
-
-                    <div class="review__cards swiper-slide">
-                        <div class="img-content">
-                            <span class="overlay"></span>
-
-                            <div class="review__card-img">
-                                <img src="img/profile1.png" alt="">
-                            </div>
-                        </div>
-
-                        <div class="review__content">
-                            <h2 class="review__name">
-                                David ell
-                            </h2>
-                            <p class="review__desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates numquam officia
-                                voluptatibus consectetur, similique asperiores incidunt consequuntur quas quod autem
-                                soluta molestias quidem minima hic dignissimos illum iste necessitatibus nobis.
-                            </p>
-                            <button class="review__btn">Read More</button>
-                        </div>
-                    </div>
-
-                    <div class="review__cards swiper-slide">
-                        <div class="img-content">
-                            <span class="overlay"></span>
-
-                            <div class="review__card-img">
-                                <img src="img/profile1.png" alt="">
-                            </div>
-                        </div>
-
-                        <div class="review__content">
-                            <h2 class="review__name">
-                                David ell
-                            </h2>
-                            <p class="review__desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates numquam officia
-                                voluptatibus consectetur, similique asperiores incidunt consequuntur quas quod autem
-                                soluta molestias quidem minima hic dignissimos illum iste necessitatibus nobis.
-                            </p>
-                            <button class="review__btn">Read More</button>
-                        </div>
-                    </div>
-
-                    <div class="review__cards swiper-slide">
-                        <div class="img-content">
-                            <span class="overlay"></span>
-
-                            <div class="review__card-img">
-                                <img src="img/profile1.png" alt="">
-                            </div>
-                        </div>
-
-                        <div class="review__content">
-                            <h2 class="review__name">
-                                David ell
-                            </h2>
-                            <p class="review__desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates numquam officia
-                                voluptatibus consectetur, similique asperiores incidunt consequuntur quas quod autem
-                                soluta molestias quidem minima hic dignissimos illum iste necessitatibus nobis.
-                            </p>
-                            <button class="review__btn">Read More</button>
-                        </div>
-                    </div>
-
-                    <div class="review__cards swiper-slide">
-                        <div class="img-content">
-                            <span class="overlay"></span>
-
-                            <div class="review__card-img">
-                                <img src="img/profile1.png" alt="">
-                            </div>
-                        </div>
-
-                        <div class="review__content">
-                            <h2 class="review__name">
-                                David ell
-                            </h2>
-                            <p class="review__desc">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates numquam officia
-                                voluptatibus consectetur, similique asperiores incidunt consequuntur quas quod autem
-                                soluta molestias quidem minima hic dignissimos illum iste necessitatibus nobis.
-                            </p>
-                            <button class="review__btn">Read More</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- 
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div> -->
-            </div>
-        </section>
+        
     </main>
-
-    <hr>
-
-
     <footer class="footer container">
         <div class="footer__container">
             <div class="footer__contact">
                 <h1 class="footer__header">Contact Us</h1>
                 <div class="footer__content">
-                    
-                        <i class="uil uil-location-point"></i>
-                        <p class="footer__link">111 North avenue</p>
-                    
-                </div>
-                <div class="footer__content">
 
-                        <i class="uil uil-phone-alt"></i>
-                        <p class="footer__link">394-746-744</p>
+                    <i class="uil uil-location-point"></i>
+                    <p class="footer__link">111 North avenue</p>
 
                 </div>
                 <div class="footer__content">
-   
-                        <i class="uil uil-envelope-minus"></i>
-                        <p class="footer__link">Support4@gmail.com</p>
+
+                    <i class="uil uil-phone-alt"></i>
+                    <p class="footer__link">394-746-744</p>
+
+                </div>
+                <div class="footer__content">
+
+                    <i class="uil uil-envelope-minus"></i>
+                    <p class="footer__link">Support4@gmail.com</p>
 
                 </div>
             </div>
@@ -759,9 +854,9 @@
                 </h1>
                 <div class="footer__content">
 
-                        <i class="uil uil-signin"></i>
-                        <p class="footer__link">Sign in</p>
-                
+                    <i class="uil uil-signin"></i>
+                    <p class="footer__link">Sign in</p>
+
                 </div>
             </div>
             <div class="footer__company">
@@ -769,10 +864,10 @@
                     Company
                 </h1>
                 <div class="footer__content">
-                   
-                        <i class="uil uil-users-alt"></i>
-                        <p class="footer__link">About us</p>
-        
+
+                    <i class="uil uil-users-alt"></i>
+                    <p class="footer__link">About us</p>
+
                 </div>
             </div>
             <div class="footer__ressources">
@@ -781,9 +876,9 @@
                 </h1>
                 <div class="footer__content">
 
-                        <i class="uil uil-link"></i>
-                        <p class="footer__link">Safety Privacy & Terms</p>
-       
+                    <i class="uil uil-link"></i>
+                    <p class="footer__link">Safety Privacy & Terms</p>
+
                 </div>
             </div>
         </div>
@@ -794,8 +889,10 @@
     </footer>
 
 
-    <script src="js/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 

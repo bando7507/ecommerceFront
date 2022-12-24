@@ -31,11 +31,14 @@ const contenu = document.querySelectorAll('.product')
 let index = 0
 onglet.forEach(el =>{
     el.addEventListener('click', () =>{
+        onglet.forEach(nav => nav.classList.remove('active'))
+        el.classList.add('active')
+
         index = el.getAttribute('data-amin')
         for(let i = 0 ; contenu.length > i; i++){
             const newIndex = contenu[i].getAttribute('data-amin')
             if(index == newIndex ){
-                contenu[i].classList.add('show-product')
+                contenu[i].classList.add('show-product') 
             }else{
                 contenu[i].classList.remove('show-product')
             }
@@ -114,7 +117,7 @@ ScrollReveal()
         duration: 1000,
         delay: 400,
         distance: "30%",
-        origin: "right",
+        origin: "left",
         reset: true
     });
 ScrollReveal()
@@ -130,7 +133,7 @@ ScrollReveal()
         duration: 1500,
         delay: 800,
         distance: "30%",
-        origin: "left",
+        origin: "right",
         reset: true
     });
 ScrollReveal()
@@ -138,7 +141,7 @@ ScrollReveal()
         duration: 1400,
         delay: 700,
         distance: "20%",
-        origin: "right",
+        origin: "top",
         reset: true
     });
 ScrollReveal()
@@ -147,5 +150,14 @@ ScrollReveal()
         delay: 600,
         distance: "50%",
         origin: "bottom",
+        reset: true
+    });
+
+    ScrollReveal()
+    .reveal('.box-img', {
+        duration: 1200,
+        delay: 600,
+        distance: "50%",
+        scale: "2.5", 
         reset: true
     });

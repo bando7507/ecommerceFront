@@ -343,7 +343,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 .products__item{
+    cursor: pointer;
     font-family: var(--body-font);
+}
+.active{
+    color: #d49556;
+}
+.products__item:hover{
+    color: #d49556;
 }
 
 .product{
@@ -436,7 +443,75 @@ body::-webkit-scrollbar-thumb {
     color: #000;
     font-size: 1rem;
 }
+.casque__container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 1rem;
+}
 
+.casque__head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    margin-bottom: 2em;
+}
+
+.casque__head h1,
+.casque__head p{
+    font-size: 2rem;
+    font-family: var(--body-font);
+}
+
+.casque__menu{
+    padding: 1rem;;
+    background: #916464;
+}
+
+.casque__list{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;gap: 2rem;
+}
+
+.casque__menu-title{
+    font-size: 1.5rem;
+    font-family: var(--body-font);
+    margin-bottom: 1rem;
+}
+.casque__box-img img{
+    width: 20rem;
+}
+
+.casque__box-img{
+    display: flex;
+    gap: 2rem;
+}
+
+.casque__box-title{
+    font-size: 1.5rem;
+    font-family: var(--body-font);
+}
+
+.box-desc{
+    margin: 1.5rem 0;
+    font-family: var(--body-font);
+
+}
+
+.casque__box-title span{
+    display: block;
+    margin-top: 1rem;
+}
+
+.casqu__btn{
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #d49556;
+}
 
 
 @media (max-width: 767px) {
