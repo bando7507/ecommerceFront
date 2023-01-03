@@ -6,11 +6,432 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <title>products</title>
+    <link rel="stylesheet" href="product_style.css">
+    <link rel="icon" type="image/png" href="../../img/cate-h11_1.png" />
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <title>test</title>
 </head>
 
 <body>
 
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href=""><img src="../../img/logo.png" class="nav__logo" alt=""></a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="/">HOME</a></li>
+                    <li class="nav__item"><a href="/views/view_products/products.html">PRODUCTS</a></li>
+                    <li class="nav__item"><a href="#">ABOUT</a></li>
+                    <li class="nav__item"><a href="#">CONTACT</a></li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav--close"></i>
+            </div>
+            <div class="nav__numbers">
+                <span class="cart"><i class="uil uil-shopping-cart"></i></span>
+            </div>
+            <div class="nav__btns">
+                <div class="nav__toggle" id="nav__toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class='hero__container'>
+            <div class="hero">
+                <h1 class="hero__title">
+                    <label>
+                        Over <span>6,500</span> Curated Design
+                    </label>
+                    <br />
+                    <label htmlFor="">
+                        Ressources, <span>Graphics & Website</span> Templates
+                    </label>
+                </h1>
+                <p>
+                    High-quality Design Theme for personal or commercial use contains 6k+ items in 100 categories.
+                </p>
+                <div class="search">
+                    <span>All Categories</span>
+                    <hr />
+                    <input type="text" class="hero__inptu" placeholder='Search Products...' />
+                    <button>
+                        <!-- <BiSearch class='heIcon' /> -->
+                    </button>
+                </div>
+                <p>Example : Phone, TV, PC</p>
+            </div>
+        </section>
+
+        <section class="cards">
+            <div class='card_item'>
+                <div class="cards_left">
+                    <img src="../../img/cate-h11.png" alt="" />
+                </div>
+                <div class="cards_right">
+                    <h4>Web Themes</h4>
+                    <p>5 items</p>
+                </div>
+            </div>
+
+            <div class='card_item'>
+                <div class="cards_left">
+                    <img src="../../img/cate-h11_5.png" alt="" />
+                </div>
+                <div class="cards_right">
+                    <h4>Web Themes</h4>
+                    <p>5 items</p>
+                </div>
+            </div>
+
+            <div class='card_item'>
+                <div class="cards_left">
+                    <img src="../../img/cate-h11_3.png" alt="" />
+                </div>
+                <div class="cards_right">
+                    <h4>Web Themes</h4>
+                    <p>5 items</p>
+                </div>
+            </div>
+
+            <div class='card_item'>
+                <div class="cards_left">
+                    <img src="../../img/cate-h11_2.png" alt="" />
+                </div>
+                <div class="cards_right">
+                    <h4>Web Themes</h4>
+                    <p>5 items</p>
+                </div>
+            </div>
+
+            <div class='card_item'>
+                <div class="cards_left">
+                    <img src="../../img/cate-h11_1.png" alt="" />
+                </div>
+                <div class="cards_right">
+                    <h4>Web Themes</h4>
+                    <p>5 items</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="product">
+            <div class="product_container">
+                <div class='heading'>
+                    <h2>Trending Products</h2>
+                    <p>Check designs of the week, These rising stars are worth your attension</p>
+                </div>
+            </div>
+
+            <div class="product__items">
+                    <div class="product__box">
+                        <div class="product__img">
+                            <img src="../../img/1-1-1.jpg" alt="" />
+                            <div class="overlay">
+                                <button class="product__button">
+                                    <i class="uil uil-shopping-bag"></i>
+                                </button>
+                                <button class="product__button">
+                                    <i class="uil uil-heart"></i>
+                                </button>
+                                <button class="product__button">
+                                    <i class="uil uil-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product__details">
+                            <h3>{item.title}</h3>
+                            <p>{item.author}</p>
+                            <h4>Price : ${item.price}</h4>
+                        </div>
+                    </div>
+                    <div class="product__box">
+                        <div class="product__img">
+                            <img src="../../img/1-1-1.jpg" alt="" />
+                            <div class="overlay">
+                                <button class="product__button">
+                                    <i class="uil uil-shopping-bag"></i>
+                                </button>
+                                <button class="product__button">
+                                    <i class="uil uil-heart"></i>
+                                </button>
+                                <button class="product__button">
+                                    <i class="uil uil-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product__details">
+                            <h3>{item.title}</h3>
+                            <p>{item.author}</p>
+                            <h4>Price : ${item.price}</h4>
+                        </div>
+                    </div>
+                    <div class="product__box">
+                        <div class="product__img">
+                            <img src="../../img/1-1-1.jpg" alt="" />
+                            <div class="overlay">
+                                <button class="product__button">
+                                    <i class="uil uil-shopping-bag"></i>
+                                </button>
+                                <button class="product__button">
+                                    <i class="uil uil-heart"></i>
+                                </button>
+                                <button class="product__button">
+                                    <i class="uil uil-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product__details">
+                            <h3>{item.title}</h3>
+                            <p>{item.author}</p>
+                            <h4>Price : ${item.price}</h4>
+                        </div>
+                    </div>
+                    <div class="product__box">
+                        <div class="product__img">
+                            <img src="../../img/1-1-1.jpg" alt="" />
+                            <div class="overlay">
+                                <button class="product__button">
+                                    <i class="uil uil-shopping-bag"></i>
+                                </button>
+                                <button class="product__button">
+                                    <i class="uil uil-heart"></i>
+                                </button>
+                                <button class="product__button">
+                                    <i class="uil uil-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product__details">
+                            <h3>{item.title}</h3>
+                            <p>{item.author}</p>
+                            <h4>Price : ${item.price}</h4>
+                        </div>
+                    </div>
+                    <div class="product__box">
+                        <div class="product__img">
+                            <img src="../../img/1-1-1.jpg" alt="" />
+                            <div class="overlay">
+                                <button class="product__button">
+                                    <i class="uil uil-shopping-bag"></i>
+                                </button>
+                                <button class="product__button">
+                                    <i class="uil uil-heart"></i>
+                                </button>
+                                <button class="product__button">
+                                    <i class="uil uil-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product__details">
+                            <h3>{item.title}</h3>
+                            <p>{item.author}</p>
+                            <h4>Price : ${item.price}</h4>
+                        </div>
+                    </div>
+                    <div class="product__box">
+                        <div class="product__img">
+                            <img src="../../img/1-1-1.jpg" alt="" />
+                            <div class="overlay">
+                                <button class="product__button">
+                                    <i class="uil uil-shopping-bag"></i>
+                                </button>
+                                <button class="product__button">
+                                    <i class="uil uil-heart"></i>
+                                </button>
+                                <button class="product__button">
+                                    <i class="uil uil-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product__details">
+                            <h3>{item.title}</h3>
+                            <p>{item.author}</p>
+                            <h4>Price : ${item.price}</h4>
+                        </div>
+                    </div>
+                    <div class="product__box">
+                        <div class="product__img">
+                            <img src="../../img/1-1-1.jpg" alt="" />
+                            <div class="overlay">
+                                <button class="product__button">
+                                    <i class="uil uil-shopping-bag"></i>
+                                </button>
+                                <button class="product__button">
+                                    <i class="uil uil-heart"></i>
+                                </button>
+                                <button class="product__button">
+                                    <i class="uil uil-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product__details">
+                            <h3>{item.title}</h3>
+                            <p>{item.author}</p>
+                            <h4>Price : ${item.price}</h4>
+                        </div>
+                    </div>
+                    <div class="product__box">
+                        <div class="product__img">
+                            <img src="../../img/1-1-1.jpg" alt="" />
+                            <div class="overlay">
+                                <button class="product__button">
+                                    <i class="uil uil-shopping-bag"></i>
+                                </button>
+                                <button class="product__button">
+                                    <i class="uil uil-heart"></i>
+                                </button>
+                                <button class="product__button">
+                                    <i class="uil uil-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product__details">
+                            <h3>{item.title}</h3>
+                            <p>{item.author}</p>
+                            <h4>Price : ${item.price}</h4>
+                        </div>
+                    </div>
+                    <div class="product__box">
+                        <div class="product__img">
+                            <img src="../../img/1-1-1.jpg" alt="" />
+                            <div class="overlay">
+                                <button class="product__button">
+                                    <i class="uil uil-shopping-bag"></i>
+                                </button>
+                                <button class="product__button">
+                                    <i class="uil uil-heart"></i>
+                                </button>
+                                <button class="product__button">
+                                    <i class="uil uil-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product__details">
+                            <h3>{item.title}</h3>
+                            <p>{item.author}</p>
+                            <h4>Price : ${item.price}</h4>
+                        </div>
+                    </div>
+                    <div class="product__box">
+                        <div class="product__img">
+                            <img src="../../img/1-1-1.jpg" alt="" />
+                            <div class="overlay">
+                                <button class="product__button">
+                                    <i class="uil uil-shopping-bag"></i>
+                                </button>
+                                <button class="product__button">
+                                    <i class="uil uil-heart"></i>
+                                </button>
+                                <button class="product__button">
+                                    <i class="uil uil-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product__details">
+                            <h3>{item.title}</h3>
+                            <p>{item.author}</p>
+                            <h4>Price : ${item.price}</h4>
+                        </div>
+                    </div>
+                    <div class="product__box">
+                        <div class="product__img">
+                            <img src="../../img/1-1-1.jpg" alt="" />
+                            <div class="overlay">
+                                <button class="product__button">
+                                    <i class="uil uil-shopping-bag"></i>
+                                </button>
+                                <button class="product__button">
+                                    <i class="uil uil-heart"></i>
+                                </button>
+                                <button class="product__button">
+                                    <i class="uil uil-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product__details">
+                            <h3>{item.title}</h3>
+                            <p>{item.author}</p>
+                            <h4>Price : ${item.price}</h4>
+                        </div>
+                    </div>
+                    <div class="product__box">
+                        <div class="product__img">
+                            <img src="../../img/1-1-1.jpg" alt="" />
+                            <div class="overlay">
+                                <button class="product__button">
+                                    <i class="uil uil-shopping-bag"></i>
+                                </button>
+                                <button class="product__button">
+                                    <i class="uil uil-heart"></i>
+                                </button>
+                                <button class="product__button">
+                                    <i class="uil uil-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product__details">
+                            <h3>{item.title}</h3>
+                            <p>{item.author}</p>
+                            <h4>Price : ${item.price}</h4>
+                        </div>
+                    </div>
+
+                  
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <div class="footer__container">
+            <div class="footer__content_1">
+                <span class="footer__title">Tempor</span>
+                <span class="footer__desc">Similique</span>
+                <span class="footer__desc">Deserunt mollit anim</span>
+                <span class="footer__desc">Sed ut perpliciatis</span>
+            </div>
+            <div class="footer__content_2">
+                <span class="footer__title">Sunt in culpa</span>
+                <span class="footer__desc">Sunt in culpa</span>
+                <span class="footer__desc">Mollit anim</span>
+                <span class="footer__desc">Perpliciatis</span>
+            </div>
+            <div class="footer__content_3">
+                <span class="footer__title">Qui officia</span>
+                <span class="footer__desc">Deserunt</span>
+                <span class="footer__desc">Mollitia</span>
+                <span class="footer__desc">Laborum</span>
+            </div>
+            <div class="footer__content_4">
+                <span class="footer__title">Magna</span>
+                <span class="footer__desc">123 dignissimos, 42</span>
+                <span class="footer__desc">minim@info.com</span>
+                <span class="footer__desc">+1 (234) 567 89 01</span>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <h5>copyright 2022, All right reserved.</h5>
+            <div class="social">
+                <i class="uil uil-facebook"></i>
+                <i class="uil uil-twitter"></i>
+                <i class="uil uil-instagram-alt"></i>
+            </div>
+            <div class="others">
+                <i class="uil uil-paypal"></i>
+                <i class="uil uil-card-atm"></i>
+                <i class="uil uil-master-card"></i>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="../../js/app_product.js"></script>
 </body>
 

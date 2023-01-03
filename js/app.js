@@ -186,6 +186,46 @@ ScrollReveal()
         duration: 1600,
         delay: 300,
         oppaciy: 0,
-        scale: "1.5", 
+        scale: ".3", 
+        reset: true
+    });
+
+    ///////////////
+
+    ScrollReveal()
+    .reveal('.search__content', {
+        duration: 1600,
+        delay: 300,
+        oppaciy: 0,
+        distance: "50%",
+        origin: "top",
+        reset: true
+    });
+
+    ScrollReveal()
+    .reveal('.search__form', {
+        duration: 1300,
+        delay: 500,
+        oppaciy: 0,
+        distance: "50%",
+        origin: "bottom",
+        reset: true
+    });
+
+    ScrollReveal()
+    .reveal('.rond1', {
+        duration: 1600,
+        delay: 300,
+        oppaciy: 0,
+        scale: "3", 
+        reset: true
+    });
+
+    ScrollReveal()
+    .reveal('.rond3', {
+        duration: 1600,
+        delay: 500,
+        oppaciy: 0,
+        scale: ".1", 
         reset: true
     });
