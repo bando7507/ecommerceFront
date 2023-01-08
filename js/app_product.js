@@ -247,3 +247,29 @@ const removeItem = (id) => {
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
+
+ScrollReveal()
+    .reveal('.hero__container', {
+        duration: 1000,
+        delay: 400,
+        distance: "50%",
+        origin: "top",
+        reset: true
+    });
+
+    ScrollReveal()
+    .reveal('.card_item', {
+        duration: 1400,
+        delay: 500,
+        oppaciy: 0,
+        reset: true
+    });
+
+
+    ScrollReveal()
+    .reveal('.product', {
+        duration: 1400,
+        delay: 700,
+        oppaciy: 0,
+        reset: true
+    });
