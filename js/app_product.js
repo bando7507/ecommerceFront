@@ -34,7 +34,7 @@ const data = [{
         cover: "../../img/1-1-1.jpg",
         title: "Floating 2021 iPhone 12 Mockups (PSD)",
         author: "by Blueskytechco in Mockups",
-        price: 30.0,
+        price: 32.0,
         category: "mockups",
         qty: 0,
     },
@@ -43,7 +43,7 @@ const data = [{
         cover: "../../img/1-1-1.jpg",
         title: "Floating 2021 iPhone 12 Mockups (PSD)",
         author: "by Blueskytechco in Mockups",
-        price: 30.0,
+        price: 10.0,
         category: "mockups",
         qty: 0,
     },
@@ -52,7 +52,7 @@ const data = [{
         cover: "../../img/1-1-1.jpg",
         title: "Floating 2021 iPhone 12 Mockups (PSD)",
         author: "by Blueskytechco in Mockups",
-        price: 30.0,
+        price: 10876.0,
         category: "mockups",
         qty: 0,
     },
@@ -61,7 +61,7 @@ const data = [{
         cover: "../../img/1-1-1.jpg",
         title: "Floating 2021 iPhone 12 Mockups (PSD)",
         author: "by Blueskytechco in Mockups",
-        price: 30.0,
+        price: 40.0,
         category: "mockups",
         qty: 0,
     },
@@ -70,7 +70,7 @@ const data = [{
         cover: "../../img/1-1-1.jpg",
         title: "Floating 2021 iPhone 12 Mockups (PSD)",
         author: "by Blueskytechco in Mockups",
-        price: 30.0,
+        price: 1230.0,
         category: "mockups",
         qty: 0,
     },
@@ -79,7 +79,7 @@ const data = [{
         cover: "../../img/1-1-1.jpg",
         title: "Floating 2021 iPhone 12 Mockups (PSD)",
         author: "by Blueskytechco in Mockups",
-        price: 30.0,
+        price: 122.0,
         category: "mockups",
         qty: 0,
     },
@@ -88,7 +88,7 @@ const data = [{
         cover: "../../img/1-1-1.jpg",
         title: "Floating 2021 iPhone 12 Mockups (PSD)",
         author: "by Blueskytechco in Mockups",
-        price: 30.0,
+        price: 299.0,
         category: "mockups",
         qty: 0,
     },
@@ -97,11 +97,13 @@ const data = [{
         cover: "../../img/1-1-1.jpg",
         title: "Floating 2021 iPhone 12 Mockups (PSD)",
         author: "by Blueskytechco in Mockups",
-        price: 30.0,
+        price: 320.0,
         category: "mockups",
         qty: 0,
     },
 ]
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
 
 const product = [...new Set(data.map((item) => {
     return item
@@ -144,25 +146,23 @@ document.getElementById('root').innerHTML = product.map((item) => {
     )
 }).join('')
 
+//////////////////////////////////////////////////////////////////////////////////////////////////
 
-const cart = []
+var cart = []
 const add = document.querySelectorAll('#clickAdd')
 
 
 add.forEach((item, index) => {
     item.addEventListener('click', (i) => {
         // cart.push(data[index])
-        cart.push({...data[index]})
+        cart.push({
+            ...data[index]
+        })
         document.getElementById('count').innerHTML = `${cart.length}`
+        console.log(cart);
         deploy()
-        deleteItem()
-        // console.log(cart);
     })
 })
-
-
-
-
 if (cart.length === 0) {
     document.getElementById('count').innerHTML = `0`
 }
@@ -173,10 +173,8 @@ if (cart.length === 0) {
 // }
 
 
-// ////////////////
 
-
-
+//////////////////////////////////////////////////////////////////////////////////////////////////
 document.querySelector('.nav__numbers').addEventListener('click', () => {
     select.classList.add('select_show')
 })
@@ -185,14 +183,15 @@ document.querySelector('.select__close').addEventListener('click', () => {
     select.classList.remove('select_show')
 })
 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
 const deploy = () => {
     if (cart.length !== 0) {
-        // document.getElementById('root2').innerHTML ="vise"
         document.getElementById('root2').innerHTML = cart.map((item) => {
             var {
+                id,
                 cover,
                 title,
-                author,
                 price,
             } = item
 
@@ -201,28 +200,50 @@ const deploy = () => {
                    <div class="lobox__con">
                     <img src=${cover} alt="">
                     <div class="lobox__content-name">
-                        ${title}
+                    <span>Title:</span> ${title}
                     </div>
                     <div class="lobox__content-price">
-                        ${price}
-                        <i class="uil uil-trash-alt" id="trash"></i>
+                    <span>Price:</span> ${price}
+                        <i class="uil uil-trash-alt" id="trash" onClick='removeItem(${id})'></i>
                     </div>
                     </div>
+                    <hr>
                     `
             )
         }).join('')
     }
 }
 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+const removeItem = (id) => {
+    cart = cart.filter((el) => el.id !== id)
+    document.getElementById('count').innerHTML = `${cart.length}`
 
-const deleteItem = () => {
-    const del = document.querySelectorAll('#trash')
+    document.getElementById('root2').innerHTML = cart.map((item) => {
+        var {
+            id,
+            cover,
+            title,
+            author,
+            price,
+        } = item
 
-    del.forEach((el, index) => {
-        el.addEventListener('click', () => {
-            const newell = cart.filter((el, ind) => ind !== index )
-            console.log(newell);
-            console.log(cart);
-        })
-    })
+        return (
+            `
+               <div class="lobox__con">
+                <img src=${cover} alt="">
+                <div class="lobox__content-name">
+                    ${title}
+                </div>
+                <div class="lobox__content-price">
+                    ${price}
+                    <i class="uil uil-trash-alt" id="trash" onClick='removeItem(${id})'></i>
+                </div>
+                </div>
+                `
+        )
+    }).join('')
 }
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
