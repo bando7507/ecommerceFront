@@ -117,26 +117,16 @@ body::-webkit-scrollbar-thumb {
     padding: .5rem;
 }
 
-.cart::before {
-    content: '3';
-    position: absolute;
-    top: -10px;
-    width: 24px;
-    height: 24px;
-    color: #000;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.548);
-}
 
-.user {
-    border: 2px solid #000;
-    font-size: 15px;
-    padding: .5rem;
-    border-radius: 1.5rem;
-    cursor: pointer;
+
+.headActive{
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 1rem 0;
+    background: var(--bg-color);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
 
 .slider {

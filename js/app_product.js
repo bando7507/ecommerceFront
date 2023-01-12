@@ -7,6 +7,7 @@ const slider = document.querySelector('.slider')
 const hero = document.querySelector('.nav__hero')
 
 const select = document.querySelector('.select')
+const head = document.querySelector('.header')
 
 
 navOpen.addEventListener('click', () => {
@@ -23,6 +24,16 @@ allLinks.forEach((el) => {
         navMenu.classList.remove('show')
     })
 })
+
+window.document.addEventListener('scroll', () =>{
+    if(window.scrollY > 10){
+        head.classList.add('headActive')
+    }else{
+        head.classList.remove('headActive')
+    }
+})
+
+
 
 
 ////////////////////
@@ -185,6 +196,15 @@ document.querySelector('.select__close').addEventListener('click', () => {
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+const card_empty = () => {
+    document.getElementById('root2').innerHTML=`
+        <div>Card Empty</div>
+    `
+}
+
+card_empty()
+
 const deploy = () => {
     if (cart.length !== 0) {
         document.getElementById('root2').innerHTML = cart.map((item) => {
@@ -212,6 +232,10 @@ const deploy = () => {
             )
         }).join('')
     }
+    
+ 
+
+    
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
@@ -243,6 +267,8 @@ const removeItem = (id) => {
                 `
         )
     }).join('')
+
+    card_empty()
 }
 
 

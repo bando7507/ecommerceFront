@@ -5,6 +5,8 @@ const allLinks = document.querySelectorAll('.nav__item')
 
 const slider = document.querySelector('.slider')
 const hero = document.querySelector('.nav__hero')
+const head = document.querySelector('.header')
+
 
 navOpen.addEventListener('click', () => {
     navMenu.classList.add('show')
@@ -19,6 +21,14 @@ allLinks.forEach((el) => {
     el.addEventListener('click', () => {
         navMenu.classList.remove('show')
     })
+})
+
+window.document.addEventListener('scroll', () =>{
+    if(window.scrollY > 10){
+        head.classList.add('headActive')
+    }else{
+        head.classList.remove('headActive')
+    }
 })
 
 // /////////////////////////////////

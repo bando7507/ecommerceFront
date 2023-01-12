@@ -127,6 +127,16 @@ body::-webkit-scrollbar-thumb {
     padding: .5rem;
 }
 
+.headActive{
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 1rem 0;
+    background: var(--bg-color);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
 /* hero */
 
 .hero__container {
@@ -328,6 +338,16 @@ body::-webkit-scrollbar-thumb {
     background: #fff;
     z-index: 9999999;
     overflow-y: scroll;
+}
+
+.lobox::-webkit-scrollbar {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+}
+
+.lobox::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: #c7ecee;
 }
 
 .select__close{
