@@ -25,10 +25,10 @@ allLinks.forEach((el) => {
     })
 })
 
-window.document.addEventListener('scroll', () =>{
-    if(window.scrollY > 10){
+window.document.addEventListener('scroll', () => {
+    if (window.scrollY > 10) {
         head.classList.add('headActive')
-    }else{
+    } else {
         head.classList.remove('headActive')
     }
 })
@@ -138,7 +138,7 @@ document.getElementById('root').innerHTML = product.map((item) => {
             <div class="overlay">
                 <button class="product__button">
                     <!--<i class="uil uil-shopping-bag" onClick='addCart(${i++})'></i>-->
-                    <i class="uil uil-shopping-bag" id="clickAdd"></i>
+                    <i class="uil uil-shopping-bag" onClick='addCart(${id})'></i>
                 </button>
                 <button class="product__button">
                     <i class="uil uil-heart"></i>
@@ -160,23 +160,81 @@ document.getElementById('root').innerHTML = product.map((item) => {
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
 var cart = []
-const add = document.querySelectorAll('#clickAdd')
+// const add = document.querySelectorAll('#clickAdd')
 
 
-add.forEach((item, index) => {
-    item.addEventListener('click', (i) => {
-        // cart.push(data[index])
-        cart.push({
-            ...data[index]
-        })
-        document.getElementById('count').innerHTML = `${cart.length}`
-        console.log(cart);
-        deploy()
+const addCart = (i) => {
+    // cart.push(data[i])
+    // console.log(i);
+    data.filter((el, id) => {
+        if (el.id === i) {
+            cart.push(product[id])
+        }
     })
-})
+
+    if (cart.length > 1) {
+        // cart = cart.map((el, id) => {
+        //     if (el.id === i) {
+        //         // console.log();
+        //         // console.log(el);
+        //         // return {...el, qty: 1}
+        //         return {...cart[id], qty: 1}
+        //     } 
+        // })
+        // console.log(cart);
+
+
+
+
+        const sas = cart.filter((obj, index, self) => 
+        // self.findIndex(t => t.id === obj.id) === index
+
+        console.log(self.findIndex(t => t.id === obj.id))
+        );
+
+        // cart = sas.map((ele) =>{
+        //     return ele
+        // })
+
+        // console.log(cart);
+    }
+
+
+    deploy()
+
+    if (cart.length >= 1) {
+        document.getElementById('count').innerHTML = `${cart.length}`
+    }
+}
+
 if (cart.length === 0) {
     document.getElementById('count').innerHTML = `0`
 }
+// add.forEach((item, index) => {
+//     item.addEventListener('click', (i) => {
+//         // cart.push(data[index])
+//         cart.push({
+//             ...data[index]
+//         })
+
+//         if(cart.length > 1){
+//             cart.map((el) =>{
+//                 // if(el.id === item.id){
+//                 //     console.log("papa");
+//                 // }
+//                 // console.log(el);
+//                 console.log(item.id);
+//             })
+//         }
+//         document.getElementById('count').innerHTML = `${cart.length}`
+//         // console.log(cart);
+//         deploy()
+//     })
+// })
+
+
+
+
 
 // const addCart = (i) => {
 //     cart.push(data[i])
@@ -198,7 +256,7 @@ document.querySelector('.select__close').addEventListener('click', () => {
 
 
 const card_empty = () => {
-    document.getElementById('root2').innerHTML=`
+    document.getElementById('root2').innerHTML = `
         <div>Card Empty</div>
     `
 }
@@ -213,6 +271,7 @@ const deploy = () => {
                 cover,
                 title,
                 price,
+                qty
             } = item
 
             return (
@@ -227,15 +286,16 @@ const deploy = () => {
                         <i class="uil uil-trash-alt" id="trash" onClick='removeItem(${id})'></i>
                     </div>
                     </div>
+                    ${qty}
                     <hr>
                     `
             )
         }).join('')
     }
-    
- 
 
-    
+
+
+
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
@@ -268,7 +328,7 @@ const removeItem = (id) => {
         )
     }).join('')
 
-    card_empty()
+    // card_empty()
 }
 
 
@@ -283,7 +343,7 @@ ScrollReveal()
         reset: true
     });
 
-    ScrollReveal()
+ScrollReveal()
     .reveal('.card_item', {
         duration: 1400,
         delay: 500,
@@ -292,7 +352,7 @@ ScrollReveal()
     });
 
 
-    ScrollReveal()
+ScrollReveal()
     .reveal('.product', {
         duration: 1400,
         delay: 700,
