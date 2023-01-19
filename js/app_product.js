@@ -173,30 +173,16 @@ const addCart = (i) => {
     })
 
     if (cart.length > 1) {
-        // cart = cart.map((el, id) => {
-        //     if (el.id === i) {
-        //         // console.log();
-        //         // console.log(el);
-        //         // return {...el, qty: 1}
-        //         return {...cart[id], qty: 1}
-        //     } 
-        // })
-        // console.log(cart);
-
-
 
 
         const sas = cart.filter((obj, index, self) => 
-        // self.findIndex(t => t.id === obj.id) === index
-
-        console.log(self.findIndex(t => t.id === obj.id))
+        self.findIndex(t => t.id === obj.id) === index
         );
 
-        // cart = sas.map((ele) =>{
-        //     return ele
-        // })
+        cart = sas.map((ele) =>{
+            return ele
+        })
 
-        // console.log(cart);
     }
 
 
@@ -210,36 +196,6 @@ const addCart = (i) => {
 if (cart.length === 0) {
     document.getElementById('count').innerHTML = `0`
 }
-// add.forEach((item, index) => {
-//     item.addEventListener('click', (i) => {
-//         // cart.push(data[index])
-//         cart.push({
-//             ...data[index]
-//         })
-
-//         if(cart.length > 1){
-//             cart.map((el) =>{
-//                 // if(el.id === item.id){
-//                 //     console.log("papa");
-//                 // }
-//                 // console.log(el);
-//                 console.log(item.id);
-//             })
-//         }
-//         document.getElementById('count').innerHTML = `${cart.length}`
-//         // console.log(cart);
-//         deploy()
-//     })
-// })
-
-
-
-
-
-// const addCart = (i) => {
-//     cart.push(data[i])
-//     // console.log(i);
-// }
 
 
 
